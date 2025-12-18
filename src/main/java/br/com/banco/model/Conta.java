@@ -1,3 +1,5 @@
+package main.java.br.com.banco.model;
+
 import java.util.Scanner;
 
 public class Conta {
@@ -7,7 +9,7 @@ public class Conta {
     String idConta;
     int saldoConta;
 
-    Conta(String statusConta ,String nomeUsuario, String cpfUsuario, String idConta, int saldoConta)  {
+    public Conta(String statusConta ,String nomeUsuario, String cpfUsuario, String idConta, int saldoConta)  {
         this.statusConta = statusConta;
         this.nomeUsuario = nomeUsuario;
         this.cpfUsuario = cpfUsuario;

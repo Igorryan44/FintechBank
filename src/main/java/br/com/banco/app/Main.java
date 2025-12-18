@@ -1,3 +1,8 @@
+package main.java.br.com.banco.app;
+
+import main.java.br.com.banco.model.Conta;
+import main.java.br.com.banco.model.contaPoupanca;
+
 public class Main {
     public static void main(String[] args) {
 
