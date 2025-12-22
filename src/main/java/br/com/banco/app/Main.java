@@ -1,20 +1,13 @@
 package main.java.br.com.banco.app;
 
-import main.java.br.com.banco.model.Conta;
-import main.java.br.com.banco.model.contaPoupanca;
+import main.java.br.com.banco.auth.Employee;
+import main.java.br.com.banco.auth.User;
 
 public class Main {
     public static void main(String[] args) {
+        Employee user = new Employee();
+        user.setCategory("Fulano");
+        user.userInformations();
 
-        Conta contaPoupanca1 = new contaPoupanca(
-                2,
-                "Ativo",
-                "Fulano",
-                "0142583698",
-                "145",
-                0);
-        contaPoupanca1.Informacao();
-        contaPoupanca1.Deposito();
-        contaPoupanca1.Saque();
     }
 }

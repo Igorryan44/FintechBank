@@ -1,34 +1,67 @@
 package main.java.br.com.banco.auth;
 
-public class User {
-    String idUser;
-    String nickName;
-    String fullName;
-    String userEmail;
-    String cpfUser;
-    String creationDate;
-    String dateUserBorn;
-    String userType;
+public abstract class User {
+    public String userId;
+    public String userFullName;
+    public String userNickName;
+    public String userCPF;
+    public String userStatus;
+    public boolean totalAccess;
 
-    public User(String idUser, String nickName, String fullName, String cpfUser , String creationDate, String dateUserBorn, String userType, String userEmail){
-        this.idUser = idUser;
-        this.nickName = nickName;
-        this.fullName = fullName;
-        this.userEmail = userEmail;
-        this.cpfUser = cpfUser;
-        this.creationDate = creationDate;
-        this.dateUserBorn = dateUserBorn;
-        this.userType = userType;
+
+    public String getUserId() {
+        return userId;
     }
 
-    private void Create(){
-//        TODO when data config be create: Function add user
-        System.out.println("Novo usuário criado: " + this.nickName);
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
-    private void Delete(){
-//        TODO when data config be create: Function remove user
-        System.out.println("Usuário deletado: " + this.nickName);
+    public String getUserFullName() {
+        return userFullName;
     }
 
+    public void setUserFullName(String userFullName) {
+        this.userFullName = userFullName;
+    }
+
+    public String getUserNickName() {
+        return userNickName;
+    }
+
+    public void setUserNickName(String userNickName) {
+        this.userNickName = userNickName;
+    }
+
+    public String getUserCPF() {
+        return userCPF;
+    }
+
+    public void setUserCPF(String userCPF) {
+        this.userCPF = userCPF;
+    }
+
+    public String getUserStatus() {
+        return userStatus;
+    }
+
+    public void setUserStatus(String userStatus) {
+        this.userStatus = userStatus;
+    }
+
+    public boolean isTotalAccess() {
+        return totalAccess;
+    }
+
+    public void setTotalAccess(boolean totalAccess) {
+        this.totalAccess = totalAccess;
+    }
+
+    public void userInformations(){
+        System.out.println("User ID: " + this.userId);
+        System.out.println("User nikname: " + this.userNickName);
+        System.out.println("User status: " + this.userStatus);
+        System.out.println("Acces full: " + this.totalAccess);
+
+    }
 }
