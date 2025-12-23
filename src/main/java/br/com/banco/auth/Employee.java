@@ -18,10 +18,7 @@ public class Employee extends User{
 
     @Override
     public void setTotalAccess(boolean totalAccess) {
-        if (this.category.equals("Manager")){
-            this.totalAccess = true;
-        } else
-            this.totalAccess = totalAccess;
+        this.totalAccess = this.category.equals("Manager");
 
     }
 }

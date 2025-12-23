@@ -1,7 +1,5 @@
 package main.java.br.com.banco.model;
 
-import main.java.br.com.banco.controller.paymentMethods;
-
 public final class CorrentAccount implements Account, paymentMethods{
     private double creditCardLimit = 1000.00;
     private double debitLimit = 150.00;

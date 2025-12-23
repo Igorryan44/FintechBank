@@ -1,4 +1,4 @@
-package main.java.br.com.banco.controller;
+package main.java.br.com.banco.model;
 
 public interface paymentMethods {
     public void creditCardPayment(double value);
